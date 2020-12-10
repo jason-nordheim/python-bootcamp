@@ -172,3 +172,20 @@ The `reverse()` method repositions the elements in a list such that the order of
   - `None`
 - returns
   - `None`
+
+### Time Complexity of Mutating Lists
+
+| List Method            | Average    | Worst-case |
+| ---------------------- | ---------- | ---------- |
+| `list.copy()`          | θ(n)       | θ(n)       |
+| `list.append(element)` | θ(1)       | θ(1)       |
+| `list.pop()`           | θ(1)       | θ(1)       |
+| `list.pop(index)`      | θ(n)       | θ(n)       |
+| `list.insert(element)` | θ(n)       | θ(n)       |
+| `list[index]`          | θ(1)       | θ(1)       |
+| `list[index] = value`  | θ(1)       | θ(1)       |
+| `list[index] = value`  | θ(1)       | θ(1)       |
+| `list.sort()`          | θ(n log n) | θ(n log n) |
+| `list.max()`           | θ(n)       | θ(n)       |
+| `list.min()`           | θ(n)       | θ(n)       |
+| `len(list)`            | θ(n)       | θ(n)       |
